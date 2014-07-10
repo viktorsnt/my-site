@@ -1,0 +1,59 @@
+
+#-------------------------------
+# General Site Settings
+
+title: Victor Almeida
+description: hi I'm victor and I'm a front-end developer. I love creating beautiful, simple and effective designs. see my latest work
+email: viktorsnt@gmail.com
+
+logo: 'logo.svg'
+backgroundImage: 'bg.png'
+
+menu:
+- {name: About Me, url: '#about-me'}
+- {name: Work, url: '#work'}
+- {name: Clients, url: '#clients'}
+- {name: Contact, url: '#contact'}
+
+
+#-------------------------------
+# Portfolio
+
+portfolio:
+- {name: TYPO International Design Talks, title: '117'}
+- {name: City-IN website concept, title: '118'}
+- {name: Crispy Icons, title: '119'}
+- {name: Flat Mobile UI/UX Concept, title: '120'}
+- {name: Fresh It Up, title: '121'}
+- {name: Timeline Page, title: '122'}
+- {name: Weather Dashboard, title: '123'}
+- {name: Stripes & Co, title: '124'}
+- {name: Flat Mobile UI/UX Concept, title: '125'}
+- {name: Fresh It Up, title: '126'}
+- {name: Timeline Page, title: '127'}
+
+
+#-------------------------------
+# About Section
+
+skills:
+- {name: Communication, value: '5'}
+- {name: Organization, value: '7'}
+- {name: Learning, value: '5'} # 10
+- {name: Teaching, value: '5'} # 6
+- {name: Planning, value: '5'} # 7
+- {name: Visual Design, value: '5'}
+- {name: UX Design, value: '5'}
+- {name: Programming, value: '6'}
+
+
+#-------------------------------
+# About Section
+
+social:
+- {name: Facebook, url: 'http://facebook.com/victoralmeidas'}
+- {name: Behance, url: 'http://facebook.com/victoralmeidas'}
+- {name: Instagram, url: 'http://facebook.com/victoralmeidas'}
+- {name: Twitter, url: 'http://facebook.com/victoralmeidas'}
+- {name: Linkedin, url: 'http://facebook.com/victoralmeidas'}
+

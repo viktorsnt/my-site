@@ -1,0 +1,51 @@
+///////////////////////  --
+//                   //  ----
+//      SETTINGS     //  ------
+//                   //  ----
+///////////////////////  --
+
+//------------------------------------------------
+// Transition the image paths from the settings file to usable SASS variables
+
+// $logo-path: '{{ site.data.settings.logo }}'
+// $hero-path: '{{ site.data.settings.background-image }}'
+// $avatar-path: '{{ site.data.settings.avatar }}'
+
+//------------------------------------------------
+// Set some colors as sass variables 
+
+$accent: #5d5d5d
+$accent-light: #8c8c8c
+$bgcolor: #f5f5f5
+
+$baseFontFamily: 'Open Sans', Helvetica, Arial, sans-serif
+
+$documentBackgroundColor: $bgcolor
+$headlineColor: $accent
+$textColor: #1a1a1a
+$red: #b83c51
+$black: #1a1a1a
+$linkColor: $accent
+$selectionColor: rgb(255,255,158)
+
+$sectionMargin: 360px
+
+// Import Base Styles
+@import "font-awesome"
+@import "base/mixins"
+@import "base/placeholders"
+@import "base/normalize"
+@import "base/base"
+
+// Import Layout Styles
+@import "layout/grid"
+@import "layout/header"
+@import "layout/portfolio"
+@import "layout/about"
+@import "layout/contact"
+
+// Import Module Styles
+// @import "modules/buttons"
+
+// Import State Styles
+// @import "states/validation"

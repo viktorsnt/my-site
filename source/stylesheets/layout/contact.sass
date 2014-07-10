@@ -1,0 +1,65 @@
+section#social,
+section#contact
+	margin-top: $sectionMargin
+
+section#social
+	nav
+		margin: 0 auto
+		display: table
+		ul
+			margin: 0
+			padding: 0
+			list-style: none
+			li
+				display: inline-block
+				margin: 0 27px
+				a
+					font-size: 40px
+					color: $accent-light
+					line-height: 1.5
+					border: 1px solid $accent-light
+					border-radius: 100%
+					padding: 20px
+
+section#contact
+	margin-top: $sectionMargin
+
+	h2
+		text-align: center
+
+	form, p
+		margin: 0 auto 80px
+
+	p
+		font-family: Helvetica-Light, $baseFontFamily
+		font-weight: light
+		color: $black
+		line-height: 2
+
+	form, input, button, textarea, p
+		width: 470px
+		display: block
+		margin-top: 26px
+		text-align: center
+		@media screen and (max-width: 480px)
+			width: 300px
+
+	input, button
+		height: 50px
+		@media screen and (max-width: 480px)
+			height: 40px
+
+	input, button, textarea
+		font-size: 22px
+		line-height: 1.5
+		background: none
+		border: 1px solid $accent
+		@media screen and (max-width: 480px)
+			font-size: 18px
+
+	button
+		border: 0
+		background: #b0b0b0
+		color: #3f3f3f
+		&:hover
+			background: #818181

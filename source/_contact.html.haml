@@ -1,0 +1,26 @@
+%section#social
+	
+	.container
+
+		%nav
+			%ul
+				- data.settings.social.each do |social|
+					= social_network_link(social.name, social.url)
+
+%section#contact
+
+	.container
+
+		%h2 Contact
+
+		%p
+			I am currently accepting small projects to take on. If you feel like I’m the man for the job, let’s get down to business!
+
+		%form
+			/ %label{for: "name"} Name
+			%input#name{type: "text", placeholder: "Name"}
+			/ %label{for: "email"} Email
+			%input#email{type: "text", placeholder: "Email"}
+			/ %label{for: "regularTextarea"} Message
+			%textarea#regularTextarea{placeolher: "Message", rows: 5}
+			%button{type: "submit"} Send

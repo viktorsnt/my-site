@@ -1,0 +1,9 @@
+%section#portfolio
+
+	.container
+
+		%h2 Portfolio
+		
+		- data.settings.portfolio.each do |project|
+			%a{href: '#', class: "thumb-container"}
+				%img{src: "images/#{project.title}.png", title: "#{project.name}"}
