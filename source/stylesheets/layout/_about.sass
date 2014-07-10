@@ -7,7 +7,8 @@ $skillFontSize: 445px
 	$skillFontSize: 445px
 
 section#about,
-section#skills
+section#skills,
+section#image
 	margin-top: $sectionMargin
 
 section#about
@@ -90,4 +91,24 @@ section#skills
 					p span
 						width: ($skillFontSize*$i) / 10
 
-				
+section#image
+
+	.image-container
+		display: block
+		width: 455px
+		margin: 0 auto
+
+		@media screen and (max-width: 468px)
+			width: 100%
+
+		img
+			display: block
+			max-width: 100%
+			height: auto
+
+		img:nth-child(2)
+			// position: absolute
+			margin-top: -404px
+
+			@media screen and (max-width: 468px)
+				margin-top: -335px
