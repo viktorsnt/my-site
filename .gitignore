@@ -21,3 +21,8 @@
 /source/stylesheets/layout/README.markdown
 /source/stylesheets/modules/README.markdown
 /source/stylesheets/states/README.markdown
+
+/build/stylesheets/layout/README.html
+build/stylesheets/base/README.html
+build/stylesheets/modules/README.html
+build/stylesheets/states/README.html
