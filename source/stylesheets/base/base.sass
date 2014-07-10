@@ -12,17 +12,26 @@ h1, h2, h3, h4, h5, h6
 	letter-spacing: -2px
 
 .huge, %huge, h1
-	font-size: 78px
+	font-size: $baseFontSize * 4.85 // 78px
 	line-height: 1.2
 	letter-spacing: -1px
+
+	@media screen and (max-width: 480px)
+		font-size: 48px
 
 .large, %large, h2
 	font-size: 48px
 	line-height: 1.14
 
+	@media screen and (max-width: 480px)
+		font-size: 28px
+
 .bigger, %bigger, h3 
 	font-size: 26px
 	line-height: 1.38
+
+	@media screen and (max-width: 480px)
+		font-size: 20px
 
 .big, %big, h4
 	font-size: 22px
@@ -61,7 +70,6 @@ a:hover, a:focus
 	color: lighten($linkColor, 20%)
 
 
-
 /* Selection colors (easy to forget)
 	------------------------------------	*/
 
@@ -85,7 +93,7 @@ body
 	------------------------------------	*/
 body
 	background: $documentBackgroundColor
-	font-size: 16px
+	font-size: $baseFontSize
 	line-height: 1.6
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif
 	color: $textColor
@@ -98,6 +106,9 @@ body
 	padding-top: 90px
 	border-top: 10px solid $black
 	border-bottom: 10px solid $black
+
+	@media screen and (max-width: 480px)
+		padding-top: 20px
 
 h1
 	span

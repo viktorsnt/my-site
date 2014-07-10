@@ -19,6 +19,7 @@ $accent-light: #8c8c8c
 $bgcolor: #f5f5f5
 
 $baseFontFamily: 'Open Sans', Helvetica, Arial, sans-serif
+$baseFontSize: 16px
 
 $documentBackgroundColor: $bgcolor
 $headlineColor: $accent
@@ -29,6 +30,11 @@ $linkColor: $accent
 $selectionColor: rgb(255,255,158)
 
 $sectionMargin: 360px
+
+@media screen and (max-width: 480px)
+	$baseFontSize: 14px
+	$sectionMargin: 240px
+
 
 // Import Base Styles
 @import "font-awesome"

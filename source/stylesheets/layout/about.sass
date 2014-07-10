@@ -60,6 +60,13 @@ section#skills
 					height: 10px
 					background-color: $black
 
+			@media screen and (max-width: 480px)
+				width: 100%
+				margin-left: 0
+				p
+					font-size: 35px
+					span
+						margin: 17px 0
 			@media screen and (min-width: 768px)
 				width: 350px
 				margin-left: 20px
@@ -82,3 +89,5 @@ section#skills
 				&.skills-#{$i}
 					p span
 						width: ($skillFontSize*$i) / 10
+
+				
