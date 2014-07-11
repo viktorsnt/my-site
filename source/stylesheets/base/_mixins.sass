@@ -17,9 +17,20 @@
 // 2. The use of `table` rather than `block` is only necessary if using
 //    `:before` to contain the top-margins of child elements.
 @mixin clearfix
-  &:before,
-  &:after
-    content: " " // 1
-    display: table // 2
-  &:after
-    clear: both
+	&:before,
+	&:after
+		content: " " // 1
+		display: table // 2
+	&:after
+		clear: both
+
+@mixin border-radius($value)
+	-moz-border-radius: $value
+	-webkit-border-radius: $value
+	border-radius: $value
+
+@mixin transition($value)
+	webkit-transition: $value
+	moz-transition: $value
+	o-transition: $value
+	transition: $value

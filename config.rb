@@ -53,7 +53,7 @@ helpers do
   def social_network_link(network_name, url)
     # if network_setting
       <<-MARKUP
-        <li>
+        <li class='#{network_name.downcase}'>
           <a href='#{url}'>
             <span><i class='fa fa-#{network_name.downcase.gsub(' ', '-')}'></i>
             </span>
