@@ -55,7 +55,7 @@ helpers do
       <<-MARKUP
         <li>
           <a href='#{url}'>
-            <span class='hide-for-small'><i class='fa fa-#{network_name.downcase.gsub(' ', '-')}'></i>
+            <span><i class='fa fa-#{network_name.downcase.gsub(' ', '-')}'></i>
             </span>
           </a>
         </li>
