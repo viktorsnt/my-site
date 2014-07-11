@@ -17,4 +17,6 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw]
 
+# Assets
 gem "font-awesome-sass", :require => false
+gem "jquery-rails", "~> 3.0.4", :require => false
