@@ -36,14 +36,21 @@ section#contact
 		color: $black
 		line-height: 2
 
-	form, input, button, textarea, p
-		width: 470px
+	.contact-inner
 		display: block
-		margin-top: 26px
-		text-align: center
+		margin: 0 auto
+		width: 470px
 
 		@media screen and (max-width: 480px)
 			width: 100%
+
+	.form-group
+		margin-top: 26px
+
+	input, button, textarea, p
+		display: block
+		text-align: center
+		width: 100%
 
 	input, button
 		height: 50px
