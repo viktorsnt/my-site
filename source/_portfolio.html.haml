@@ -2,8 +2,17 @@
 
 	.container
 
-		%h2 Portfolio
+		%h2 Web
 		
-		- data.settings.portfolio.each do |project|
+		- data.settings.web.each do |project|
+			%a{href: '#', class: "thumb-container"}
+				%img{src: "images/#{project.title}.png", title: "#{project.name}"}
+
+		%br
+		%br
+
+		%h2 Design
+		
+		- data.settings.design.each do |project|
 			%a{href: '#', class: "thumb-container"}
 				%img{src: "images/#{project.title}.png", title: "#{project.name}"}
