@@ -1,17 +1,28 @@
 %header#header
 	.container
 		%nav
-			%a{href: "#"} Portuguese
+			%a.lang-pt{href: "#", lang: 'en'} Portuguese
+			%a.lang-pt{href: "#", lang: 'pt'} Português
 			%span /
-			%a{href: "#"} English
+			%a.lang-en{href: "#", lang: 'en'} English
+			%a.lang-en{href: "#", lang: 'pt'} Inglês
 		
-		%h1
+		%h1{lang: 'en'}
 			hi I'm victor
 			%br
 			%span & I'm a front-end developer
+		%h1{lang: 'pt'}
+			oi eu sou victor
+			%br
+			%span & Eu sou um desenvolvedor front-end
 
-		%h3
+		%h3{lang: 'en'}
 			I love creating beautiful, simple and
 			%br.hide-for-small
 			effective designs.
 			%a{href: "#portfolio"} see my latest work
+		%h3{lang: 'pt'}
+			Eu gosto de criar simples, bonito e
+			%br.hide-for-small
+			effective designs.
+			%a{href: "#portfolio"} veja meus últimos trabalhos

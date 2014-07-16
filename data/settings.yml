@@ -11,12 +11,6 @@ email: viktorsnt@gmail.com
 logo: 'logo.svg'
 backgroundImage: 'bg.png'
 
-menu:
-- {name: About Me, url: '#about-me'}
-- {name: Work, url: '#work'}
-- {name: Clients, url: '#clients'}
-- {name: Contact, url: '#contact'}
-
 
 #-------------------------------
 # Portfolio
@@ -40,24 +34,28 @@ design:
 #-------------------------------
 # About Section
 
+story:
+- {lang: en, title: My Story, text: "Premeditated. No, perfection wasn’t planned. It happened. Friends together. An unscripted meeting of gin‐minded minds, accidentally stumbling onto the notion of a unique tipple. Some memorable nights, congregating on the Chesterfield, prophetic rantings, laughs, seated, heated discussions.<br><br>The upshot? A challenge. To craft a great liquid for genuine people. Artisan. Argued. Researched. Shaped. Imagined behind closed doors. A fine gin born of roguish sociability."}
+- {lang: pt, title: Minha História, text: "Premeditado. No, perfection wasn’t planned. It happened. Friends together. An unscripted meeting of gin‐minded minds, accidentally stumbling onto the notion of a unique tipple. Some memorable nights, congregating on the Chesterfield, prophetic rantings, laughs, seated, heated discussions.<br>The upshot? A challenge. To craft a great liquid for genuine people. Artisan. Argued. Researched. Shaped. Imagined behind closed doors. A fine gin born of roguish sociability."}
+
 skills:
-- {name: Communication, value: '5'}
+- {name: Communication, value: '4'}
 - {name: Organization, value: '7'}
-- {name: Learning, value: '5'} # 10
-- {name: Teaching, value: '5'} # 6
-- {name: Planning, value: '5'} # 7
+- {name: Learning, value: '10'}
+- {name: Teaching, value: '6'}
+- {name: Planning, value: '7'}
 - {name: Visual Design, value: '5'}
 - {name: UX Design, value: '5'}
 - {name: Programming, value: '6'}
 
 
 #-------------------------------
-# About Section
+# Social Section
 
 social:
-- {name: Facebook, url: 'http://facebook.com/victoralmeidas'}
-- {name: Behance, url: 'http://facebook.com/victoralmeidas'}
-- {name: Instagram, url: 'http://facebook.com/victoralmeidas'}
-- {name: Twitter, url: 'http://facebook.com/victoralmeidas'}
-- {name: Linkedin, url: 'http://facebook.com/victoralmeidas'}
+- {name: Facebook, url: 'http://facebook.com/victoralmeidas/'}
+- {name: Behance, url: 'http://www.behance.net/almeidavictor/'}
+- {name: Instagram, url: 'http://instagram.com/viktorsnt/'}
+- {name: Twitter, url: 'http://twitter.com/viktorsnt/'}
+- {name: Linkedin, url: 'http://br.linkedin.com/in/almeidavictor/'}
 
