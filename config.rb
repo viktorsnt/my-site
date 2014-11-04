@@ -70,7 +70,7 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-# ignore '*.markdown'
+ignore '*.markdown'
 
 # Build-specific configuration
 configure :build do
