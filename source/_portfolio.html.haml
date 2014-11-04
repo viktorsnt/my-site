@@ -5,8 +5,13 @@
 		%h2 Web
 		
 		- data.settings.web.each do |project|
-			%a{href: '#', class: "thumb-container"}
-				%img{src: "images/#{project.title}.png", title: "#{project.name}"}
+			%a{href: "#", class: "thumb-container", data: { folder: "#{project.folder}" } }
+				%img{src: "images/#{project.title}", title: "#{project.name}"}
+
+			.project-wrap
+				%a{href: "#", class: 'close'} X
+				%h3.project-title #{project.name}
+				.project-content
 
 		%br
 		%br
@@ -14,5 +19,10 @@
 		%h2 Design
 		
 		- data.settings.design.each do |project|
-			%a{href: '#', class: "thumb-container"}
-				%img{src: "images/#{project.title}.png", title: "#{project.name}"}
+			%a{href: "#", class: "thumb-container", data: { folder: "#{project.folder}" }}
+				%img{src: "images/#{project.title}", title: "#{project.name}"}
+
+			.project-wrap
+				%a{href: "#", class: 'close'} X
+				%h3.project-title #{project.name}
+				.project-content

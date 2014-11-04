@@ -16,19 +16,19 @@ backgroundImage: 'bg.png'
 # Portfolio
 
 web:
-- {name: TYPO International Design Talks, title: '117'}
-- {name: City-IN website concept, title: '118'}
-- {name: Crispy Icons, title: '119'}
-- {name: Flat Mobile UI/UX Concept, title: '120'}
-- {name: Fresh It Up, title: '121'}
-- {name: Timeline Page, title: '122'}
+- {name: TYPO International Design Talks, title: '117.png', folder: "web/proj-1.html"}
+- {name: City-IN website concept, title: '118.png', folder: "web/proj-2.html"}
+- {name: Crispy Icons, title: '119.png', folder: "web/proj-1.html"}
+- {name: Flat Mobile UI/UX Concept, title: '120.png', folder: "web/proj-2.html"}
+- {name: Fresh It Up, title: '121.png', folder: "web/proj-1.html"}
+- {name: Timeline Page, title: '122.png', folder: "web/proj-2.html"}
 
 design:
-- {name: Weather Dashboard, title: '123'}
-- {name: Stripes & Co, title: '124'}
-- {name: Flat Mobile UI/UX Concept, title: '125'}
-- {name: Fresh It Up, title: '126'}
-- {name: Timeline Page, title: '127'}
+- {name: Weather Dashboard, title: '123.png', folder: "design/proj-1.html"}
+- {name: Stripes & Co, title: '124.png', folder: "design/proj-2.html"}
+- {name: Flat Mobile UI/UX Concept, title: '125.png', folder: "design/proj-1.html"}
+- {name: Fresh It Up, title: '126.png', folder: "design/proj-2.html"}
+- {name: Timeline Page, title: '127.png', folder: "design/proj-1.html"}
 
 
 #-------------------------------

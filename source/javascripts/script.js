@@ -1,4 +1,5 @@
 //= require jquery
+
 $.fn.scrollTo = function( target, options, callback ){
 	if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
 	var settings = $.extend({
@@ -17,26 +18,81 @@ $.fn.scrollTo = function( target, options, callback ){
 	});
 }
 
+function projectLoad() {
+
+	$.ajaxSetup({ cache: true });
+	$(".close").click(function(e){
+		e.preventDefault();
+		$(this).parent().removeClass('active');
+	});
+	// $(".thumb-container").click(function(e){
+	// 	e.preventDefault();
+
+	// 	var $this = $(this),
+	// 			$div = $('.project-full'),
+	// 			$contentDiv = $div.find('.project-wrap .project-content'),
+	// 			newfolder = $this.data('folder'),
+	// 			spinner = '<div class="loader">Loading...</div>',
+	// 			newHTML = 'portfolio/'+ newfolder;
+	// 	$(".project-full").css('top',$('body').offset().top);
+	// 	$(".project-full").addClass('active');
+	// 	$contentDiv.html(spinner).load(newHTML);
+	
+	// });
+	$(".thumb-container").click(function(e){
+		e.preventDefault();
+
+		var $this = $(this),
+				$contentDiv = $this.next(),
+				newfolder = $this.data('folder'),
+				spinner = '<div class="loader">Loading...</div>',
+				newHTML = 'portfolio/'+ newfolder;
+		
+
+			if ( !$contentDiv.hasClass('active') ) {
+				$(".project-wrap.active").removeClass('active');
+				$contentDiv.addClass('active').find('.project-content').html(spinner).load(newHTML);
+				setTimeout(function(){
+					$top = $this.offset().top;
+					$("html, body").animate({scrollTop : $top }, 500, 'swing');
+				},500);
+				// } else {
+					// $contentDiv.removeClass('active');
+			}
+
+	});
+
+}
+
 $(function(){
-	$("a.lang-en").on('click', function(e){
+	
+	projectLoad();
+	$(".lang-en").on('click', function(e){
 		e.preventDefault();
 		$('body').removeClass('pt').addClass('en');
 	});
-	$("a.lang-pt").on('click', function(e){
+	$(".lang-pt").on('click', function(e){
 		e.preventDefault();
 		$('body').removeClass('en').addClass('pt');
 	});
 
-	$("a[href^='#']").on('click', function(e){
-		e.preventDefault();
-		var target = $(this).attr('href');
-		if (target != '#') {
-			$('body').scrollTo( $(target),{offsetTop : '-20'} );
-		}
-	});
-});
+	// $("a[href^='#']").on('click', function(event){
+	$("a[href='#portfolio']").click(function(event){
+		// e.preventDefault();
+		// var target = $(this).attr('href');
+		// if (target != '#') {
+		// 	$('body').scrollTo( $(target), {offsetTop: '-20'} );
+		// }
+		var target = $( $(this).attr('href') );
 
-$(document).ready(function() {
+	    if( target.length ) {
+	        event.preventDefault();
+	        $('html, body').animate({
+	            scrollTop: target.offset().top
+	        }, 500, 'swing');
+	    }
+	});
+
 
 	// if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	if ( $(window).width() > '768' ) {
