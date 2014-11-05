@@ -26,8 +26,8 @@ design:
 # About Section
 
 story:
-- {lang: en, title: My Story, text: "Premeditated. No, perfection wasn’t planned. It happened. Friends together. An unscripted meeting of gin‐minded minds, accidentally stumbling onto the notion of a unique tipple. Some memorable nights, congregating on the Chesterfield, prophetic rantings, laughs, seated, heated discussions.<br><br>The upshot? A challenge. To craft a great liquid for genuine people. Artisan. Argued. Researched. Shaped. Imagined behind closed doors. A fine gin born of roguish sociability."}
-- {lang: pt, title: Minha História, text: "Premeditado. No, perfection wasn’t planned. It happened. Friends together. An unscripted meeting of gin‐minded minds, accidentally stumbling onto the notion of a unique tipple. Some memorable nights, congregating on the Chesterfield, prophetic rantings, laughs, seated, heated discussions.<br>The upshot? A challenge. To craft a great liquid for genuine people. Artisan. Argued. Researched. Shaped. Imagined behind closed doors. A fine gin born of roguish sociability."}
+- {lang: en, title: My Story, text: "I'm a front-end developer based in São Paulo/Brazil. I have a degree in Computer Engineering and Photography."}
+- {lang: pt, title: Minha História, text: "Sou um desenvolvedor front-end de São Paulo/Brasil. Sou formado em Engenharia da Computação e Fotografia."}
 
 skills:
 - {name: Communication, value: '4'}
