@@ -1,4 +1,5 @@
 = render_partial 'header'
-= render_partial 'portfolio'
+- if data.settings.web || data.settings.design
+	= render_partial 'portfolio'
 = render_partial 'about'
 = render_partial 'contact'
