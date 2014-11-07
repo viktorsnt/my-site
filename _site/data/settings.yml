@@ -1,0 +1,55 @@
+
+#-------------------------------
+# General Site Settings
+
+author: Victor Almeida
+
+title: Victor Almeida
+description: hi I'm victor and I'm a front-end developer. I love creating beautiful, simple and effective designs. see my latest work
+email: eu@almeidavictor.com
+
+logo: 'logo.svg'
+backgroundImage: 'bg.png'
+
+
+#-------------------------------
+# Portfolio
+
+web:
+- {name: PB | House, title: 'portfolio/web/proj-1/thumb.png', folder: "web/proj-1.html"}
+- {name: 8 Car, title: 'portfolio/web/proj-2/thumb.png', folder: "web/proj-2.html"}
+- {name: Template 2, title: 'portfolio/web/proj-3/thumb.png', folder: "web/proj-3.html"}
+
+design:
+- {name: PB | House, title: 'portfolio/design/proj-1/thumb.png', folder: "design/proj-1.html"}
+
+
+#-------------------------------
+# About Section
+
+story:
+- {lang: en, title: My Story, text: "I'm a front-end developer based in São Paulo/Brazil. I have a degree in Computer Engineering and Photography."}
+- {lang: pt, title: Minha História, text: "Sou um desenvolvedor front-end de São Paulo/Brasil. Sou formado em Engenharia da Computação e Fotografia."}
+
+skills:
+- {name: Communication, value: '4'}
+- {name: Organization, value: '7'}
+- {name: Learning, value: '10'}
+- {name: Teaching, value: '6'}
+- {name: Planning, value: '7'}
+- {name: Visual Design, value: '5'}
+- {name: UX Design, value: '5'}
+- {name: Programming, value: '6'}
+
+
+#-------------------------------
+# Social Section
+
+social:
+- {name: Facebook, url: 'http://facebook.com/victoralmeidas/'}
+- {name: Behance, url: 'http://www.behance.net/almeidavictor/'}
+- {name: Instagram, url: 'http://instagram.com/viktorsnt/'}
+- {name: Twitter, url: 'http://twitter.com/viktorsnt/'}
+- {name: Linkedin, url: 'http://br.linkedin.com/in/almeidavictor/'}
+- {name: GitHub, url: 'http://github.com/viktorsnt'}
+

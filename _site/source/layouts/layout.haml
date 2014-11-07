@@ -1,0 +1,19 @@
+!!! 5
+%html
+	%head
+		%meta{:charset => "utf-8"}
+		%meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no", :name => "viewport"}
+		%meta{:content => "#{data.settings.author}", :name => "author"}
+		%meta{:content => "#{data.settings.description}", :name => "description"}
+		%meta{:content => "on", "http-equiv" => "cleartype"}
+		%meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+
+		%title= data.settings.title
+
+		%link{:href => "stylesheets/style.css", :rel => "stylesheet"}
+
+	%body.en{style: "background-image:url(images/#{data.settings.backgroundImage})"}
+		
+		= yield
+
+		%script{:src => "javascripts/script.js"}

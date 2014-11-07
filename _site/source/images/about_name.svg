@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="455px" height="404px" viewBox="0 0 455 404" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7892) - http://www.bohemiancoding.com/sketch -->
+    <title>about_name</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="about_icons" sketch:type="MSArtboardGroup">
+            <g id="about_name" sketch:type="MSLayerGroup" transform="translate(53.000000, 16.000000)">
+                <path d="M0,0 L77,77 M288,288 L365,365 M77,286 L0,363 M365,0 L288,77" id="Stroke-1" stroke="#272413" stroke-width="3" sketch:type="MSShapeGroup"></path>
+                <text id="V" sketch:type="MSTextLayer" font-family="Didot" font-size="96.4101937" font-weight="bold" fill="#272413">
+                    <tspan x="119" y="194">V</tspan>
+                </text>
+                <text id="A" sketch:type="MSTextLayer" font-family="Didot" font-size="96.4101937" font-weight="bold" fill="#272413">
+                    <tspan x="182" y="228">A</tspan>
+                </text>
+                <text id="EST" sketch:type="MSTextLayer" font-family="Didot" font-size="10.9735364" font-weight="bold" fill="#272413">
+                    <tspan x="119" y="216">EST</tspan>
+                </text>
+                <text id="19" sketch:type="MSTextLayer" font-family="Didot" font-size="14.2706942" font-weight="bold" fill="#272413">
+                    <tspan x="124" y="229">19</tspan>
+                </text>
+                <text id="89" sketch:type="MSTextLayer" font-family="Didot" font-size="31.4971343" font-weight="bold" fill="#272413">
+                    <tspan x="141" y="230">89</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

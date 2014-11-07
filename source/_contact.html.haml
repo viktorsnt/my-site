@@ -11,11 +11,11 @@
 
 	.container
 
-		%h2 Contact
-
-		.contact-inner
-			%p
-				I am currently accepting small projects to take on. If you feel like I’m the man for the job, let’s get down to business!
+		- data.settings.contact.each do |contact|
+			%div{lang: "#{contact.lang}"}
+				%h2= contact.title
+				.contact-inner
+					%p= contact.text
 
 		%h3.text-center= data.settings.email
 		
