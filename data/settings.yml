@@ -16,6 +16,7 @@ backgroundImage: 'bg.png'
 # Portfolio
 
 web:
+- {name: Victor Almeida, title: 'portfolio/web/proj-5/thumb.png', folder: "web/proj-5.html"}
 - {name: PB | House, title: 'portfolio/web/proj-1/thumb.png', folder: "web/proj-1.html"}
 - {name: 8 Car, title: 'portfolio/web/proj-2/thumb.png', folder: "web/proj-2.html"}
 - {name: Template 2, title: 'portfolio/web/proj-3/thumb.png', folder: "web/proj-3.html"}
