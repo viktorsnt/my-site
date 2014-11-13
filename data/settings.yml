@@ -21,8 +21,8 @@ web:
 - {name: Template 2, title: 'portfolio/web/proj-3/thumb.png', folder: "web/proj-3.html"}
 - {name: LocalTem, title: 'portfolio/web/proj-4/thumb.png', folder: "web/proj-4.html"}
 
-design:
-- {name: PB | House, title: 'portfolio/design/proj-1/thumb.png', folder: "design/proj-1.html"}
+# design:
+# - {name: PB | House, title: 'portfolio/design/proj-1/thumb.png', folder: "design/proj-1.html"}
 
 
 #-------------------------------
