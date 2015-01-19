@@ -17,10 +17,10 @@ backgroundImage: 'bg.png'
 
 web:
 - {name: Victor Almeida, thumb: 'portfolio/web/proj-5/thumb.png', folder: "web/proj-5.html", type: Web Development}
-- {name: PB | House, thumb: 'portfolio/web/proj-1/thumb.png', folder: "web/proj-1.html"}
-- {name: 8 Car, thumb: 'portfolio/web/proj-2/thumb.png', folder: "web/proj-2.html"}
-- {name: Template 2, thumb: 'portfolio/web/proj-3/thumb.png', folder: "web/proj-3.html"}
-- {name: LocalTem, thumb: 'portfolio/web/proj-4/thumb.png', folder: "web/proj-4.html"}
+- {name: PB | House, thumb: 'portfolio/web/proj-1/thumb.png', folder: "web/proj-1.html", type: Web Development}
+- {name: 8 Car, thumb: 'portfolio/web/proj-2/thumb.png', folder: "web/proj-2.html", type: Web Design}
+- {name: Template 2, thumb: 'portfolio/web/proj-3/thumb.png', folder: "web/proj-3.html", type: Web Design}
+- {name: LocalTem, thumb: 'portfolio/web/proj-4/thumb.png', folder: "web/proj-4.html", type: Front-end}
 
 # design:
 # - {name: PB | House, title: 'portfolio/design/proj-1/thumb.png', folder: "design/proj-1.html"}
