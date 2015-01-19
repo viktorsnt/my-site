@@ -25,12 +25,18 @@
 		clear: both
 
 @mixin border-radius($value)
-	-moz-border-radius: $value
 	-webkit-border-radius: $value
+	-moz-border-radius: $value
 	border-radius: $value
 
 @mixin transition($value)
-	webkit-transition: $value
-	moz-transition: $value
-	o-transition: $value
+	-webkit-transition: $value
+	-moz-transition: $value
+	-o-transition: $value
 	transition: $value
+
+@mixin animation($value)
+	-webkit-animation: $value
+	-moz-animation: $value
+	-o-animation: $value
+	animation: $value

@@ -23,42 +23,32 @@ function projectLoad() {
 	$.ajaxSetup({ cache: true });
 	$(".close").click(function(e){
 		e.preventDefault();
-		$(this).parent().removeClass('active');
+		$('.project-full').removeClass('active');
+		$('body').removeClass('modal-open');
 	});
-	// $(".thumb-container").click(function(e){
-	// 	e.preventDefault();
 
-	// 	var $this = $(this),
-	// 			$div = $('.project-full'),
-	// 			$contentDiv = $div.find('.project-wrap .project-content'),
-	// 			newfolder = $this.data('folder'),
-	// 			spinner = '<div class="loader">Loading...</div>',
-	// 			newHTML = 'portfolio/'+ newfolder;
-	// 	$(".project-full").css('top',$('body').offset().top);
-	// 	$(".project-full").addClass('active');
-	// 	$contentDiv.html(spinner).load(newHTML);
-	
-	// });
 	$(".thumb-container").click(function(e){
 		e.preventDefault();
 
 		var $this = $(this),
-				$contentDiv = $this.next(),
+				$contentDiv = $(".project-full"),
 				newfolder = $this.data('folder'),
-				spinner = '<div class="loader">Loading...</div>',
+				spinner = '<div class="loader"></div>',
 				newHTML = 'portfolio/'+ newfolder;
-		
 
-			if ( !$contentDiv.hasClass('active') ) {
-				$(".project-wrap.active").removeClass('active');
-				$contentDiv.addClass('active').find('.project-content').html(spinner).load(newHTML);
-				setTimeout(function(){
-					$top = $this.offset().top;
-					$("html, body").animate({scrollTop : $top }, 500, 'swing');
-				},500);
-				// } else {
-					// $contentDiv.removeClass('active');
-			}
+		$contentDiv.addClass('active');
+		$("body").addClass("modal-open");
+
+		$(".project-content").empty().append(spinner);
+
+		$.ajax(
+      {
+        url: newHTML,
+        success: function(html) {
+          $(".project-content").empty().append(html);
+        }
+      }
+    );
 
 	});
 

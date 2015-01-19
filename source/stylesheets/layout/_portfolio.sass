@@ -1,45 +1,55 @@
 .thumb-container
+	cursor: pointer
 	display: block
 	position: relative
+	padding: 0
+	float: left
+	line-height: 0
 	text-align: center
-	cursor: pointer
+	width: 23%
+	margin: 1%
 	+clearfix
+
+	@media screen and (max-width: 1024px)
+		width: 48%
+
+	img
+		margin: 0
+		padding: 0
+		display: block
+		max-width: 100%
+		height: auto
+		margin: 0 auto
+
+	.thumb-overlay
+		// display: none
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		z-index: 999
+		background-color: rgba(0,0,0,0.7)
+		opacity: 0
+		filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0)
+		-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+		+transition(all 250ms linear)
+		+animation(fadeScaleOut 250ms ease-in)
+
+		.project-title
+			color: #fff
+			top: 45%
+			position: relative
+			margin: 0 auto
+			display: block
+
 	&:hover
-		cursor: pointer
-	img
-		margin: 0
-		padding: 0
-		display: block
-		max-width: 100%
-		height: auto
-		margin: 0 auto
-
-	@media screen and (max-width: 480px)
-		overflow-x: hidden
-		img
-			max-width: none
-
-.project-wrap
-	background: #d3d3d3
-	max-width: 900px
-	margin: 0px auto
-	padding: 0px 20px
-	display: none
-	+clearfix
-
-	p
-		text-align: justify
-
-	img
-		margin: 0
-		padding: 0
-		display: block
-		max-width: 100%
-		height: auto
-		margin: 0 auto
-
-	&.active
-		display: block
+		.thumb-overlay
+			// display: block
+			opacity: 1
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100)
+			-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+			+animation(fadeScaleIn 250ms ease-in)
 
 .close
 	position: relative
@@ -48,32 +58,51 @@
 	right: 10px
 	font-size: 18px
 
-// .project-full
-// 	position: absolute
-// 	top: 0
-// 	left: 0
-// 	width: 100%
-// 	height: 100%
-// 	background: #000
-// 	// opacity: .7
-// 	display: none
-// 	+clearfix
+.project-full
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	width: 100%
+	height: 100%
+	background: #cecece
+	opacity: 0
+	z-index: 9999
+	+transition(opacity linear 600ms)
+	+clearfix
 
-// 	&.active
-// 		display: block
+	&.active
+		display: block
+		opacity: 1
+		z-index: 999
+		overflow: scroll
+		overflow-y: scroll
+		// has to be scroll, not auto
+		-webkit-overflow-scrolling: touch
+		+transition(opacity linear 500ms)
+		+animation(fadeScaleIn 250ms ease-in)
 
-// 	.project-wrap
-// 		background: #d3d3d3
-// 		max-width: 900px
-// 		margin: 0px auto
-// 		padding: 0px 20px
-// 		p
-// 			text-align: justify
+		.project-wrap
+			height: 100%
 
-// 		img
-// 			margin: 0
-// 			padding: 0
-// 			display: block
-// 			max-width: 100%
-// 			height: auto
-// 			margin: 0 auto
+			.project-content
+				width: 100%
+				height: 100%
+
+	.project-wrap
+		// background: #d3d3d3
+		max-width: 900px
+		margin: 0px auto
+		padding: 0px 20px
+		p
+			text-align: justify
+
+		img
+			margin: 0
+			padding: 0
+			display: block
+			max-width: 100%
+			height: auto
+			margin: 0 auto

@@ -7,11 +7,16 @@
 			
 			- data.settings.web.each do |project|
 				%a{href: "#", class: "thumb-container", data: { folder: "#{project.folder}" } }
-					%img{src: "images/#{project.title}", title: "#{project.name}"}
+					%img{src: "images/#{project.thumb}", title: "#{project.name}"}
+					.thumb-overlay
+						%h3.project-title
+							#{project.name}
+							%br
+							%small #{project.type}
 
+			.project-full
 				.project-wrap
 					%a{href: "#", class: 'close'} X
-					%h3.project-title #{project.name}
 					.project-content
 		
 		- if data.settings.design
@@ -23,8 +28,10 @@
 			- data.settings.design.each do |project|
 				%a{href: "#", class: "thumb-container", data: { folder: "#{project.folder}" }}
 					%img{src: "images/#{project.title}", title: "#{project.name}"}
+					.thumb-overlay
+						%h3.project-title #{project.name}
 
+			.project-full
 				.project-wrap
 					%a{href: "#", class: 'close'} X
-					%h3.project-title #{project.name}
 					.project-content
