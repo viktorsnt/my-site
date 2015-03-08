@@ -21,6 +21,7 @@ web:
 - {name: 8 Car, thumb: 'portfolio/web/proj-2/thumb.png', folder: "web/proj-2.html", type: Web Design}
 - {name: Template 2, thumb: 'portfolio/web/proj-3/thumb.png', folder: "web/proj-3.html", type: Web Design}
 - {name: LocalTem, thumb: 'portfolio/web/proj-4/thumb.png', folder: "web/proj-4.html", type: Front-end}
+- {name: Cia Maritima, thumb: 'portfolio/web/proj-6/maritima-nova-loja-400x300.jpg', folder: "web/proj-6.html", type: 'Front-end, E-commerce'}
 
 # design:
 # - {name: PB | House, title: 'portfolio/design/proj-1/thumb.png', folder: "design/proj-1.html"}
