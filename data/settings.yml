@@ -16,15 +16,17 @@ backgroundImage: 'bg.png'
 # Portfolio
 
 web:
-- {name: Victor Almeida, thumb: 'portfolio/web/proj-5/thumb.png', folder: "web/proj-5.html", type: Web Development}
-- {name: PB | House, thumb: 'portfolio/web/proj-1/thumb.png', folder: "web/proj-1.html", type: Web Development}
-- {name: 8 Car, thumb: 'portfolio/web/proj-2/thumb.png', folder: "web/proj-2.html", type: Web Design}
-- {name: Template 2, thumb: 'portfolio/web/proj-3/thumb.png', folder: "web/proj-3.html", type: Web Design}
-- {name: LocalTem, thumb: 'portfolio/web/proj-4/thumb.png', folder: "web/proj-4.html", type: Front-end}
-- {name: Cia Maritima, thumb: 'portfolio/web/proj-6/maritima-nova-loja-400x300.jpg', folder: "web/proj-6.html", type: 'Front-end, E-commerce'}
+- {name: PatBo para Valisere, thumb: 'web/patbo/thumb.jpg', folder: "web/patbo.html", type: 'Front-end'}
+# - {name: Automobi, thumb: 'web/automobi/thumb.jpg', folder: "web/automobi.html", type: 'Front-end, Design'}
+- {name: Cia Maritima, thumb: 'web/proj-6/maritima-nova-loja-400x300.jpg', folder: "web/proj-6.html", type: 'Front-end, E-commerce'}
+- {name: LocalTem, thumb: 'web/proj-4/thumb.png', folder: "web/proj-4.html", type: Front-end}
+- {name: Template 2, thumb: 'web/proj-3/thumb.png', folder: "web/proj-3.html", type: Web Design}
+- {name: 8 Car, thumb: 'web/proj-2/thumb.png', folder: "web/proj-2.html", type: Web Design}
+- {name: Victor Almeida, thumb: 'web/proj-5/thumb.png', folder: "web/proj-5.html", type: Web Development}
+- {name: PB | House, thumb: 'web/proj-1/thumb.png', folder: "web/proj-1.html", type: Web Development}
 
 # design:
-# - {name: PB | House, title: 'portfolio/design/proj-1/thumb.png', folder: "design/proj-1.html"}
+# - {name: Automobi, title: 'portfolio/design/automobi/thumb.png', folder: "design/proj-1.html"}
 
 
 #-------------------------------
@@ -64,5 +66,3 @@ social:
 contact:
 - {lang: en, title: Contact, text: "I am currently accepting small projects to take on. If you feel like I’m the man for the job, let’s get down to business!"}
 - {lang: pt, title: Contato, text: "Atualmente estou aceitando pequenos projetos. Se você acha que sou o cara para o trabalho, entre em contato!"}
-
-

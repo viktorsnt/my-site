@@ -4,10 +4,10 @@
 
 		- if data.settings.web
 			%h2 Web
-			
+
 			- data.settings.web.each do |project|
 				%a{href: "#", class: "thumb-container", data: { folder: "#{project.folder}" } }
-					%img{src: "images/#{project.thumb}", title: "#{project.name}"}
+					%img{src: "images/portfolio/#{project.thumb}", title: "#{project.name}"}
 					.thumb-overlay
 						%h3.project-title
 							#{project.name}
@@ -18,13 +18,13 @@
 				.project-wrap
 					%a{href: "#", class: 'close'} X
 					.project-content
-		
+
 		- if data.settings.design
 			%br
 			%br
 
 			%h2 Design
-			
+
 			- data.settings.design.each do |project|
 				%a{href: "#", class: "thumb-container", data: { folder: "#{project.folder}" }}
 					%img{src: "images/#{project.title}", title: "#{project.name}"}
