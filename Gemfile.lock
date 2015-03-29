@@ -28,6 +28,9 @@ GEM
       sass (~> 3.2.19)
     compass-import-once (1.0.4)
       sass (>= 3.2, < 3.5)
+    dotenv (1.0.2)
+    dotenv-rails (1.0.2)
+      dotenv (= 1.0.2)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -140,6 +143,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv-rails
   font-awesome-sass
   jquery-rails (~> 3.0.4)
   middleman (~> 3.3.3)

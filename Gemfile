@@ -20,3 +20,5 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 # Assets
 gem "font-awesome-sass", :require => false
 gem "jquery-rails", "~> 3.0.4", :require => false
+
+gem 'dotenv-rails', :groups => [:development, :test]
